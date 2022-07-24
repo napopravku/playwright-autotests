@@ -36,6 +36,5 @@ test('complete search', async ({ page }) => {
 
   // Asserts  
   await expect.soft(page.url()).toBe(targetUrl);
-  // await expect(page.locator('//div[contains(@class, "item--object")]//label/input')).toHaveValue("Невролог взрослый");
   await expect(mainPage.selectionInput).toHaveValue("Невролог взрослый");
 });
